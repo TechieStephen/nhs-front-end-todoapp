@@ -6,19 +6,15 @@
 }
 body{
     font-family: 'poppins';
-    width: 100%;
 }
 header{
     background-color: #A000EF;
     padding: 20px;
-    width: 100%;
 }
 header h1{
     color: #ffffff;
     font-weight: 900;
-    width: 100%;
     font-size: 1.3em;
-
 }
 
 section{
@@ -30,12 +26,12 @@ section{
     display: flex;
     flex-direction: row;
     width: 100%;
+    background-color: red;
 }
 #txt-todo{
     padding: 5px 15px;
     border: 1px solid grey;
-    font-size: 20px;
-    font-size: 25px;
+    font-size: 1.2em;
     flex: 2;
 }
 #btn-add, #btn-trash, #btn-check{
