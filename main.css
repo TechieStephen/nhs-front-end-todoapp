@@ -21,33 +21,50 @@ section{
     width: 60%;
     margin: 0px auto;
     margin-top: 40px;
+    padding: 10px;
 }
 #add-todo{
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: red;
+    justify-content: space-between;
+    align-items: center;
 }
 #txt-todo{
     padding: 5px 15px;
     border: 1px solid grey;
     font-size: 1.2em;
-    flex: 2;
+    width: 70%;
 }
-#btn-add, #btn-trash, #btn-check{
+#btn-add{
+    width: 25%;
     padding: 5px 15px;
     background-color: #A000EF;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn-trash, #btn-check{
+    padding: 5px 15px;
+    background-color: #A000EF;
+    color: #ffffff;
+    font-size: 1.2em;
     font-weight: 700;
     margin-left: 10px;
     cursor: pointer;
     border: none;
     outline: none;
+    box-sizing: border-box;
+
 }
 #btn-trash{
     background-color: rgb(255, 23, 23);
-
 }
 #btn-check{
     background-color: rgb(0, 240, 12);
@@ -84,8 +101,11 @@ li p{
 .fas{
     pointer-events: none;
 }
+i{
+    margin-right: 5px;
+}
 @media (max-width:900px){
     section{
-        width: 90%;
+        width: 95%;
     }
 }
