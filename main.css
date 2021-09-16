@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,900;1,300;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins';
+}
+header{
+    background-color: #A000EF;
+    padding: 25px;
+}
+header h1{
+    color: #ffffff;
+    font-weight: 900;
+}
+
+section{
+    width: 60%;
+    margin: 0px auto;
+    margin-top: 40px;
+    min-height: 100px;
+}
+#add-todo{
+    display: flex;
+    flex-direction: row;
+}
+#txt-todo{
+    flex:1;
+    padding: 10px 15px;
+    border: 1px solid grey;
+    font-size: 20px;
+    font-size: 25px;
+}
+#btn-add, #btn-trash, #btn-check{
+    padding: 10px 15px;
+    background-color: #A000EF;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+#btn-trash{
+    background-color: rgb(255, 23, 23);
+
+}
+#btn-check{
+    background-color: rgb(0, 240, 12);
+}
+#todos{
+    margin-top: 40px;
+}
+
+li{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: row;
+    align-items: center;
+    background-color: lightgray;
+    padding: 10px;
+
+    transition: all 1s ease;
+}
+li p{
+    flex: 1;
+    font-size: 25px;
+}
+
+#todos span{
+    display: none;
+}
+
+.completed{
+    opacity: 0.5;
+}
+.completed P{
+    text-decoration: line-through;
+}
+.fas{
+    pointer-events: none;
+}
