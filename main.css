@@ -6,35 +6,40 @@
 }
 body{
     font-family: 'poppins';
+    width: 100%;
 }
 header{
     background-color: #A000EF;
-    padding: 25px;
+    padding: 20px;
+    width: 100%;
 }
 header h1{
     color: #ffffff;
     font-weight: 900;
+    width: 100%;
+    font-size: 1.3em;
+
 }
 
 section{
     width: 60%;
     margin: 0px auto;
     margin-top: 40px;
-    min-height: 100px;
 }
 #add-todo{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 #txt-todo{
-    flex:1;
-    padding: 10px 15px;
+    padding: 5px 15px;
     border: 1px solid grey;
     font-size: 20px;
     font-size: 25px;
+    flex: 2;
 }
 #btn-add, #btn-trash, #btn-check{
-    padding: 10px 15px;
+    padding: 5px 15px;
     background-color: #A000EF;
     color: #ffffff;
     font-size: 20px;
@@ -82,4 +87,9 @@ li p{
 }
 .fas{
     pointer-events: none;
+}
+@media (max-width:900px){
+    section{
+        width: 90%;
+    }
 }
